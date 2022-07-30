@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f5796;
+
+}
+
+.navbar-default {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+
+}
+
+.navbar-header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-header p {
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+}
+
+.nav-list {
+    gap: 70px;
+}
+
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+#login-div {
+    margin-left: 85%;
+    background-color: transparent;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+#login-btn {
+    margin-left: 35%;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(55, 153, 245);
+}
+
+#login-email,
+#login-password {
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#login-email:focus::placeholder,
+#login-password:focus::placeholder {
+    color: transparent;
+}
+
+#login-email::placeholder,
+#login-password::placeholder {
+    color: white;
+    font-size: 22px;
+    opacity: 1;
+}
+
+section {
+    padding-bottom: 20px;
+    padding-left: 500px;
+}
+
+section p {
+    font-size: 22px;
+}
+
+.checkIn,
+.checkOut,
+.to-results {
+    display: flex;
+    justify-content: center;
+}
+
+.to-results {
+    margin-top: 50px;
+}
+
+.checkIn,
+.checkOut {
+    justify-content: space-evenly;
+}
+
+.checkIn input,
+.checkOut input {
+    padding: 20px;
+    width: 600px;
+
+}
+
+#toStep2btn {
+    margin-left: 800px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 20px;
+    font-size: 22px;
+    font-family: Geograph;
+    color: white;
+    border: 2px solid white;
+}
+
+.results,
+.formBTN {
+    padding: 20px;
+    display: flex;
+    font-size: 22px;
+    font-family: Geograph;
+    color: white;
+    border: 2px solid white;
+}
+
+#formBTN2 {
+    margin-top: 50px;
+    margin-left: 850px;
+    padding: 20px;
+    font-size: 22px;
+    font-family: Geograph;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 100px;
+
+}
+
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p,
+a,
+input,
+button {
+    font-family: Geograph;
+}
+
+input {
+    border: 2px solid white;
+    color: white;
+    padding-right: 200px;
+}
+
+#dob {
+    padding-right: 241px;
+}
+
+#form1 {
+    margin-top: 20px;
+    display: block;
+}
+
+.vi {
+    display: flex;
+    justify-content: center;
+    font-family: Geograph;
+    color: aliceblue;
+    font-size: 52px;
+    text-decoration: underline;
+}
+
+#cccard,
+#ppcard {
+    margin-left: 900px;
+}
+
+.cards {
+    font-family: Geograph;
+    color: aliceblue;
+    font-size: 22px;
+}
+
+.insert-cc {
+    color: white;
+    margin-left: 600px;
+}
+
+.validation {
+    margin-top: 50px;
+    color: white;
+    margin-left: 600px;
+}
+
+.stay-head {
+    margin-top: 50px;
+    color: white;
+    margin-left: 600px;
+    padding-bottom: 100px;
+}
+
+.stayswitch {
+    color: white;
+    font-family: Geograph;
+    font-size: 42px;
+    margin-left: 800px;
+    padding: 60px;
+}
+
+#submitBtm {
+    margin-left: 43vw;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    border: 0;
+    font-family: Geograph;
+    font-size: 22px;
+    color: rgb(4, 45, 78);
+    padding-left: 100px;
+}
+
+#submitBtm:hover {
+    color: white;
+    background-color: rgb(4, 45, 78);
+}
+
+
+.pin {
+    position: absolute;
+    bottom: 160px;
+    left: 100px;
+    opacity: 0;
+}
+
+.pin:hover{
+    opacity: 1;
+    
+}
+
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}

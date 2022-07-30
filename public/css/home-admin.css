@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-default{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.navbar-header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-header p{
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+}
+
+.nav-list{
+    gap: 60px;
+}
+
+
+.nav-item{
+    list-style: none;
+}
+
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+
+.parentContainer{
+    background-image: url("Images/frontImage.jpg");
+    min-height: 969px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-message{
+    text-align:center;
+    margin-top: 200px;
+    color: white;
+}
+
+
+.message1{
+    text-align: left;
+    margin-left: 480px;
+    font-weight: 500;
+    font-size: 100px;
+    font-family: Geograph;
+}
+
+
+
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}

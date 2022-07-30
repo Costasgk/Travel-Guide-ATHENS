@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-default{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.navbar-header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-header p{
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+}
+
+.nav-list{
+    gap: 70px;
+}
+
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+
+.parentContainer{
+    background-image: url("Images/frontImage.jpg");
+    min-height: 969px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-message{
+    text-align: center;
+    margin-top: 600px;
+    color: white;
+}
+
+
+.message1, .message2{
+    text-align: left;
+    margin-left: 400px;
+    font-weight: 500;
+    font-size: 60px;
+    font-family: Geograph;
+}
+
+.message3{
+    text-align: left;
+    margin-left: 400px;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+#login-div{
+    margin-left: 85%;
+    background-color: transparent;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+#login-btn{
+    margin-left: 35%;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(55, 153, 245);
+}
+
+#login-email, #login-password{
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#login-email:focus::placeholder, #login-password:focus::placeholder{
+    color: transparent;
+}
+
+#login-email::placeholder, #login-password::placeholder{
+    color: white;
+    font-size: 22px;
+    opacity: 1;
+}
+
+
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}

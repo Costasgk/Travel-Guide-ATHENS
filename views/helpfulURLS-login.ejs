@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/destination.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="app" ng-controller="cntrl">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand">Athens</p>
+            </div>
+            <ul class="d-flex nav-list">
+                <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/destination" class="nav-link">Destination</a></li>
+                <li class="nav-item"><a href="/thingsToDo-login" class="nav-link">Things to do</a></li>
+                <li class="nav-item"><a href="/reviews-login" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="/events" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="/bookNow" class="nav-link">Book Now</a></li>
+                <li class="nav-item"><a href="/more" class="nav-link">More</a></li>
+            </ul>
+            <ul class="d-flex nav-list-lr">
+                <li class="nav-item"><a href="/profile" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <br> <br><br> <br>
+        <section class="help">
+            <h1>Help others to reach ATHENS</h1>
+            <h3>Upload helpful links to help people from all around the world, reach our beloved city!</h3>
+        </section>
+        <table id="displayed-data2">
+            <% if(data.length>= 0){
+                var i = 1;
+                data.forEach(function(nums){ %>
+
+                <tr>
+                    <th>Description</th>
+                    <th>URL</th>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <%=nums.Description %>
+                    </td>
+                    <td>
+                        <%=nums.Link %>
+                    </td>
+                </tr>
+                <% i++; }) }else{ %>
+                    <tr>
+                        <td colspan="2">No Data</td>
+                    </tr>
+                    <% } %>
+
+        </table>
+        <form method="POST" action="/insertURL-login" class="form">
+            <label>Description</label>
+            <input type="text" class="form-control input" name="linkDescription" required>
+            <label>URL</label>
+            <input type="url" class="form-control input" name="helpLink" required>
+            <input type="submit" value="Submit link!" id="submitBtm"></input>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

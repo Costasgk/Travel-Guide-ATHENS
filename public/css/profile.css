@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f5796;
+}
+
+.navbar-default{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.navbar-header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-header p{
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+}
+
+.nav-list{
+    gap: 60px;
+}
+
+
+.nav-item{
+    list-style: none;
+}
+
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+#displayed-data{
+    margin-left: 28%;
+    width: 50%;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-family: Geograph;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.profile-item{
+    list-style: none;
+
+}
+
+.profile-link{
+    color: black;
+    font-size: 20px;
+    font-family: Geograph;
+    display: block;
+    position: absolute;
+    right: 2.5vw;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.profile-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}
+

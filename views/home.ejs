@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid parentContainer">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <p class="navbar-brand">Athens</p>
+                </div>
+                <ul class="d-flex nav-list">
+                    <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/destination" class="nav-link">Destination</a></li>
+                    <li class="nav-item"><a href="/thingsToDo" class="nav-link">Things to do</a></li>
+                    <li class="nav-item"><a href="/reviews" class="nav-link">Reviews</a></li>
+                </ul>
+                <ul class="d-flex nav-list-lr">
+                    <li class="nav-item drop" id="login-li">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="login-a">Login</a>
+                        <div class="dropdown-menu" id="login-div">
+                            <form class="form-horizontal" method="POST" action="/login" accept-charset="UTF-8">
+                                <input class="form-control login" type="text" placeholder="Email" id="login-email" name="email_login"><br>
+                                <input class="form-control login" type="password" placeholder="Password" id="login-password" name="password_login"><br>
+                                <input class="btn btn-primary" id="login-btn" type="submit" name="submit" value="Login">
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="/register" class="nav-link">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="intro-message">
+            <h1 class="message1">Visit Greece,</h1>
+            <h1 class="message2">Discover ATHENS</h1>
+            <h1 class="message3">Explore our city from here</h1>
+        </div>
+    </div>
+</body>
+</html>

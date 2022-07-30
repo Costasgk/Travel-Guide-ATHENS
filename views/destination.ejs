@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/destination.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="app" ng-controller="cntrl">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand">Athens</p>
+            </div>
+            <ul class="d-flex nav-list">
+                <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/destination" class="nav-link">Destination</a></li>
+                <li class="nav-item"><a href="/thingsToDo" class="nav-link">Things to do</a></li>
+                <li class="nav-item"><a href="/reviews" class="nav-link">Reviews</a></li>
+            </ul>
+            <ul class="d-flex nav-list-lr">
+                <li class="nav-item drop" id="login-li">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" id="login-a">Login</a>
+                    <div class="dropdown-menu" id="login-div">
+                        <form class="form-horizontal" action="/login" method="post" accept-charset="UTF-8">
+                            <input class="form-control login" type="text" name="email_login" placeholder="Email"
+                                id="login-email" required><br>
+                            <input class="form-control login" type="password" name="password_login"
+                                placeholder="Password" id="login-password" required><br>
+                            <input class="btn btn-primary" id="login-btn" type="submit" name="submit" value="Login">
+                        </form>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="/register" class="nav-link">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid hmessage">
+        <h2 class="head-message">explore <span class="span-message">athens</span></h2>
+    </div>
+    <div class="container-fluid information">
+        <br>
+        <h1 style=" padding-top:80px; padding-bottom:30px; margin-left:80px; color: rgb(255, 177, 122);">A journey
+            through time</h1>
+        <h2 class="information-text">
+            Welcome to Athens, the <strong>historical capital of Europe</strong>. Welcome to the birthplace of
+            democracy, arts, science and philosophy of western civilisation. Home of Plato, Socrates, Pericles,
+            Euripides, Sophocles, Aeschylus. Athens is one of the world’s oldest cities. It’s recorded history spanning
+            around 3.400 years and it is being inhabited since the 11th millennium B.C. E. Today, under the shadow of
+            Parthenon, the contemporary urban scenery of the sprawling city reflects its exciting history, its multi-
+            cultural modern personality as well as the <strong>infrastructure</strong> and <strong>facilities</strong>.
+            <br><br><br>
+            The perfect Mediterranean climate with the legendary greek sunlight, the unique combination of glorious
+            history with modern, urban innovation, the coexistence of great culture with astonishing natural beauty, the
+            high standard hotel accommodation, modern means of transportation such as the cutting edge modern metro, the
+            vibrant rhythm of life, the wide choice of opportunities for shopping, dining and night life and of course
+            the warmth of the Athenians people feature Athens as the ideal all year round city break destination. The
+            city of Parthenon is an <strong>open air museum</strong>. A large part of the town’s historic center has
+            been converted into a 3 km pedestrian zone, one of the largest in Europe. It leads to the major
+            archaeological sites (“archaeological park”), reconstructing – to a large degree – the ancient landscape.
+            Either on foot or by bike, the ‘’Grande Promenade’’ around Acropolis is an unforgettable journey through
+            history.
+        </h2>
+        <img class="athensjpg" src="public/css/Images/athens.jpg">
+    </div>
+    <div class="container-fluid">
+        <h2 class='points'>Map of Athens</h2>
+        <div class="athens-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50312.47758162361!2d23.7184617!3d37.9881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2sAthens!5e0!3m2!1sen!2sgr!4v1656356105425!5m2!1sen!2sgr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </div>
+        <br><br><br><br>
+    </div>
+    <div class="container-fluid">
+        <table id="displayed-data">
+            <% if(data.length>= 0){
+                var i = 1;
+                data.forEach(function(nums){ %>
+
+                <tr>
+                    <th>Image of Sight</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="<%=nums.Img%>">
+                    </td>
+                    <td>
+                        <%=nums.Title %>
+                    </td>
+                    <td>
+                        <%=nums.Description %>
+                    </td>
+                </tr>
+                <% i++; }) }else{ %>
+                    <tr>
+                        <td colspan="2">No Data</td>
+                    </tr>
+                    <% } %>
+
+        </table>
+        <section class="help">
+            <h1>Help others to reach ATHENS</h1>
+            <h3>Upload helpful links to help people from all around the world, reach our beloved city!</h3>
+        </section>
+        <a class="helpfulURLs" href="/helpfulURLs">Continue</a>
+    </div>
+</body>
+
+</html>

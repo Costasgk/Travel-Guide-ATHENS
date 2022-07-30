@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f5796;
+}
+
+.navbar-default{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.navbar-header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-header p{
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+}
+
+.nav-list{
+    gap: 60px;
+}
+
+
+.nav-item{
+    list-style: none;
+}
+
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+#mydata{
+    margin-left: 25%;
+    width: 50%;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-family: Geograph;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+#submitbtn{
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    display:block;
+    position: relative;
+    left: 85vw;
+    bottom: 50vh;
+    border: none;
+
+}
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}
+

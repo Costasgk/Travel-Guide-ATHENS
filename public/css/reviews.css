@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f5796;
+}
+
+.navbar-default {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.navbar-header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-header p {
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+}
+
+.nav-list {
+    gap: 60px;
+}
+
+
+.nav-item {
+    list-style: none;
+}
+
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+.help {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.help h1 {
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.help h3 {
+    margin-top: 30px;
+    text-transform: none;
+    color: rgb(219, 252, 255);
+}
+
+.reviews-form {
+    margin-left: 35vw;
+    margin-top: 20vh;
+
+}
+
+.comment {
+    width: 40%;
+    height: 100px;
+    padding: 10px;
+    background-color: #def3ff;
+}
+
+#submit-btn {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: navy;
+    background-color: white;
+    font-family: Geograph;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+#submit-btn:hover{
+    background-color: navy;
+    color: white;
+}
+
+#displayed-data{
+    
+    margin-top: 0px;
+    border-collapse: separate;
+    border-spacing: 80px;
+    font-family: Geograph;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+#rate{
+    width: 40%;
+}
+
+.reviews-form H4{
+    font-family: Geograph;
+    margin-left: 7vw;
+    color: rgb(180, 255, 254);
+}
+
+.image-review[type=file]{
+    width: 40%;
+}
+
+#login-div{
+    margin-left: 85%;
+    background-color: transparent;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+#login-btn{
+    margin-left: 35%;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(55, 153, 245);
+}
+
+#login-email, #login-password{
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#login-email:focus::placeholder, #login-password:focus::placeholder{
+    color: transparent;
+}
+
+#login-email::placeholder, #login-password::placeholder{
+    color: white;
+    font-size: 22px;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}
+

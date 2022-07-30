@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f5796;
+}
+
+.navbar-default{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.navbar-header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  
+}
+
+.navbar-header p{
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+    
+}
+
+.nav-list{
+    gap: 70px;
+}
+
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+.navbar-header, .navbar-header p,.nav-list,.nav-item, .container-fluid{
+    background-color: none
+}
+
+form{
+    margin: 0 auto;
+
+}
+.form-group{
+    text-align: left;
+}
+
+.form-group label{
+    margin-left: 29%;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.form-group input{
+    width: 40%;
+    height: 45px;
+    margin-left: 29%;
+    margin-bottom: 20px;
+}
+
+#submitBtm{
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    display:block;
+    position: relative;
+    left: 15vw;
+    top: 1vh;
+    border: none;
+    border-radius: 5px;
+}
+
+#login-div{
+    margin-left: 85%;
+    background-color: transparent;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+#login-btn{
+    margin-left: 35%;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(55, 153, 245);
+}
+
+#login-email, #login-password{
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#login-email:focus::placeholder, #login-password:focus::placeholder{
+    color: transparent;
+}
+
+#login-email::placeholder, #login-password::placeholder{
+    color: white;
+    font-size: 22px;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}

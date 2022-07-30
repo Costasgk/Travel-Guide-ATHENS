@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bookNow.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="appCNTRL">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand">Athens</p>
+            </div>
+            <ul class="d-flex nav-list">
+                <li class="nav-item"><a href="/home-login" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/destination-login" class="nav-link">Destination</a></li>
+                <li class="nav-item"><a href="/thingsToDo-login" class="nav-link">Things to do</a></li>
+                <li class="nav-item"><a href="/reviews-login" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="/events" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="/bookNow" class="nav-link">Book Now</a></li>
+                <li class="nav-item"><a href="/more" class="nav-link">More</a></li>
+            </ul>
+            <ul class="d-flex nav-list-lr">
+                <li class="nav-item"><a href="/profile" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="StepOne">
+        
+        <div class="container-fluid stays">
+            <li>
+                <h3> Hotel Grande Bretagne </h3>
+                <img
+                    src="https://www.fivestaralliance.com/files/fivestaralliance.com/field/image/nodes/2009/10181/10181_0_hotelgrandebretagne_fsa-g.jpg">
+                <div class="p-2" ng-init="myText= 420">
+                    <h4>Make Reservation <input type="radio" ng-model="stay" value="hotel1" /> </h4>
+            </li>
+            <p class="img__description">
+                Facilities
+                <br><br>
+                2 swimming pools
+                <br>
+                Free WiFi
+                <br>
+                Parking
+                <br>
+                Spa / Sallon
+                <br>
+                Bar
+                <br>
+                <img
+                    src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/328010584.jpg?k=f8243c30e30a6671e3a618ed132f42d10bccd185b464caec8e7bbcb82915d837&o=&hp=1">
+            </p>
+            <li>
+                <h3> COCO-MAT Athens Jumelle </h3>
+                <img src="https://www.halo.gr/wp-content/uploads/2018/10/003_1352_jumelle_20180907_px.jpg">
+                <p class="img__description" style="margin-left:32.3vw">
+                    Facilities
+                    <br><br>
+                    1 swimming pools
+                    <br>
+                    Free WiFi
+                    <br>
+                    Parking
+                    <br>
+                    Spa / Sallon
+                    <br>
+                    Bar
+                    <br>
+                    Pets Allowed
+                    <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/c1/a3/43/suite.jpg?w=1100&h=-1&s=1">
+                </p>
+                <div class="p-2" ng-init="myText2= 100">
+                    <h4>Make Reservation <input type="radio" ng-model="stay" value="hotel2" /></h4>
+            </li>
+
+            <li>
+                <h3> Electra Metropolis </h3>
+                <img src="https://cdn.webhotelier.net/photos/w=1920/metrope/L195132.jpg">
+                <p class="img__description" style="margin-left:64.5vw">
+                    Facilities
+                    <br><br>
+                    2 swimming pools
+                    <br>
+                    Free WiFi
+                    <br>
+                    Airport shuttle
+                    <br>
+                    Spa / Sallon
+                    <br>
+                    Bar
+                    <br>
+                    <img
+                        src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/187291235.jpg?k=b77486ac5ea39fdb5042c4554d56bafdefbcbc23396184947eb96f9935775a6d&o=&hp=1">
+                </p>
+                <div class="p-2" ng-init="myText3= 1">
+                    <h4>Make Reservation <input type="radio" ng-model="stay" value="hotel3" /> </h4>
+            </li>
+            <li>
+                <h3> Theasis Hotel </h3>
+                <img
+                    src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/268542438.jpg?k=b46f8e5d9ded86f8594d855ae8e3db91bb99b3ab9dd391d1467d160191050fab&o=&hp=1">
+                <p class="img__description" style="margin-top: 53.2vh;">
+                    Facilities
+                    <br><br>
+                    Free WiFi
+                    <br>
+                    Airport shuttle
+                    <br>
+                    Terrace
+                    <br>
+                    Pets Allowed
+                    <br>
+                    Heat
+                    <img
+                        src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/268546275.jpg?k=9639f8b71176d9c4f0d0b6b349a62a3bdf7e43221148fa2d5c2349291d13b1b7&o=&hp=1">
+                </p>
+                <div class="p-2" ng-init="myText4= 200">
+                    <h4>Make Reservation <input type="radio" ng-model="stay" value="bb1" /> </h4>
+            </li>
+            <li>
+                <h3>Athens Way Hotel</h3>
+                <img src="https://www.athenswayhotel.gr/uploads/nr_photos/75_thump.jpg">
+                <p class="img__description" style="margin-left:64.5vw; margin-top: 53.2vh;">
+                    Facilities
+                    <br><br>
+                    Free WiFi
+                    <br>
+                    Airport shuttle
+                    <br>
+                    Terrace
+                    <br>
+                    Pets Allowed
+                    <br>
+                    Lift
+                    <br>
+                    Heat
+                    <img
+                        src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/196443950.jpg?k=c81dd7c455e9d0789434684d47c5625ea0663e49d716f48303a36bf1d7bb7492&o=&hp=1">
+                </p>
+                <div class="p-2" ng-init="myText5= 500">
+                    <h4>Make Reservation <input type="radio" ng-model="stay" value="bb2" /> </h4>
+            </li>
+            <li>
+                <h3>Plaka Arch Suites</h3>
+                <img
+                    src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/220054273.jpg?k=262d64a1ade7e567bf4f462cc356a48830f1241ae6246251942b1ed96ad5d36e&o=&hp=1">
+                <p class="img__description" style="margin-left:32.3vw; margin-top: 53.2vh;">
+                    Facilities
+                    <br><br>
+                    Free WiFi
+                    <br>
+                    Airport shuttle
+                    <br>
+                    Terrace
+                    <br>
+                    24-hour front desk
+                    <br>
+                    Bar
+                    <img
+                        src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/217782874.jpg?k=e5bd672645b4c4ebbf44ee622f7042ac15ae91e3043e3d3d169e70d663fa952e&o=&hp=1">
+                </p>
+                <div class="p-2" ng-init="myText6= 60">
+                    <h4>Make Reservation <input type="radio" ng-model="stay" value="bb3" /> </h4>
+            </li>
+        </div>
+        <input type="button" id="toStep2btn" value="Click to continue"
+            onClick="document.getElementById('stepTwo').scrollIntoView();" />
+    </div>
+    <div class="stepTwo" id="stepTwo">
+        <div class="container-fluid">
+            <div class="checkIn">
+                <input id="check-in-data" type="number" ng-model="CheckIndate" min="1" max="31" placeholder="check-in date" required>
+                <input type="number" ng-model="checkInmonth" min="1" max="12" placeholder="check-in month" required>
+                <input type="number" value="{{checkYear}}" disabled>
+            </div>
+            <br><br>
+            <div class="checkOut">
+                <input type="number" ng-model="CheckOutdate" min="1" max="31" placeholder="check-out date" required>
+                <input type="number" ng-model="CheckOutmonth" min="1" max="12" placeholder="check-out month" required>
+                <input type="number" value="{{checkYear}}" disabled>
+            </div>
+        </div>
+        <div class="visitors">
+            <label>Number of Visitors</label>
+            <br>
+            <select ng-model="cols" ng-options="num for num in numbers" ng-change="makeArray()"
+                style="width: 15.5vw;"></select>
+        </div>
+        <button type="button" id="formBTN" ng-click="showForm()">Press to show results</button>
+        <form id="form1" style="display: none;">
+            <input ng-repeat="fn in arr" placeholder="Firstname" type="text" ng-model="Firstnames[$index]">
+            <br>
+            <input ng-repeat="ln in arr" placeholder="Lastname" type="text" ng-model="Lastnames[$index]">
+            <br>
+            <input ng-repeat="dob in arr" placeholder="Date of Birth" type="date" ng-model="DateOfBirth[$index]">
+            <br>
+            <input ng-repeat="ccn in arr" placeholder="ID Number" type="text" ng-model="ccNumber[$index]">
+            <br>
+        </form>
+        <div class="stayswitch" ng-switch="stay" disabled>
+            <div ng-switch-when="hotel1"> Total Cost: {{(CheckOutdate - CheckIndate)*cols*myText}} $</div>
+            <div ng-switch-when="hotel2">Total Cost: {{(CheckOutdate - CheckIndate)*cols*myText2}} $</div>
+            <div ng-switch-when="hotel3">Total Cost: {{(CheckOutdate - CheckIndate)*cols*myText3}} $</div>
+            <div ng-switch-when="bb1">Total Cost: {{(CheckOutdate - CheckIndate)*cols*myText4}} $</div>
+            <div ng-switch-when="bb2">Total Cost: {{(CheckOutdate - CheckIndate)*cols*myText5}} $</div>
+            <div ng-switch-when="bb3">Total Cost: {{(CheckOutdate - CheckIndate)*cols*myText6}} $</div>
+        </div>
+        <button type="button" id="formBTN2" onClick="document.getElementById('StepThree').scrollIntoView();">Click to
+            continue</button>
+    </div>
+    <div class="container-fluid StepThree" id="StepThree">
+        <div class="container-fluid visitors-information">
+            <h2 class="vi">FINISH RESERVATION</h2>
+            <input ng-repeat="f in Firstnames" value="{{f}}" type="text">
+            <br>
+            <input ng-repeat="l in Lastnames" value="{{l}}" type="text">
+            <br>
+            <input ng-repeat="dob in DateOfBirth" value="{{dob}}" type="text">
+            <br>
+            <input ng-repeat="ccn in ccNumber" value="{{ccn}}" type="text">
+            <br>
+        </div>
+        <div class="creditCard-inforamtions">
+            <ul>
+                <input type="radio" id="cccard" name="cccard" value="Credit Card">
+                <label for="cccard">Credit Card</label><br>
+                <input type="radio" id="ppcard" name="ppcard" value="Prepaid Card">
+                <label for="ppcard">Prepaid Card</label><br>
+            </ul>
+            <span>
+                Insert your credit card number
+                <input type="text" class="ccCardnum" placeholder="1234-1234-1234-1234" maxlength="19" />
+            </span>
+        </div>
+        <div class="validation">
+            <h2>{{five}}</h2>
+            <input type="number" placeholder="Match the number" onKeyPress="if(this.value.length==5) return false;"
+                ng-model="num" ng-change="check()" class="fiveDigit" width="100%">
+        </div>
+        <div class="totalCost">
+            <div ng-switch="stay">
+                <h3>Total Cost</h3>
+                <div ng-switch-when="hotel1">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText}} $">
+                </div>
+                <div ng-switch-when="hotel2">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText2}} $">
+                </div>
+                <div ng-switch-when="hotel3">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText3}} $">
+                </div>
+                <div ng-switch-when="bb1">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText4}} $">
+                </div>
+                <div ng-switch-when="bb2">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText5}} $">
+                </div>
+                <div ng-switch-when="bb3">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText6}} $">
+                </div>
+            </div>
+        </div>
+        <form id="ff" method="POST" action="/bookNow">
+            <input ng-repeat="fn in arr" placeholder="Firstname" type="text" ng-model="Firstnames[$index]" name="fnames"
+                style="display: none">
+            <br>
+            <input ng-repeat="ln in arr" placeholder="Lastname" type="text" ng-model="Lastnames[$index]" name="lnames"
+                style="display: none">
+            <br>
+            <input ng-repeat="dob in arr" placeholder="Date of Birth" type="date" ng-model="DateOfBirth[$index]"
+                name="dobs" style="display: none">
+            <br>
+            <input ng-repeat="ccn in arr" placeholder="ID Number" type="text" ng-model="ccNumber[$index]" name="ccnum"
+                style="display: none">
+            <br>
+            <div ng-switch="stay">
+                <div ng-switch-when="hotel1">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText}} $" name="total" style="display: none">
+                </div>
+                <div ng-switch-when="hotel2">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText2}} $" name="total" style="display: none">
+                </div>
+                <div ng-switch-when="hotel3">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText3}} $" name="total" style="display: none">
+                </div>
+                <div ng-switch-when="bb1">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText4}} $" name="total" style="display: none">
+                </div>
+                <div ng-switch-when="bb2">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText5}} $" name="total" style="display: none">
+                </div>
+                <div ng-switch-when="bb3">
+                    <input value="{{(CheckOutdate - CheckIndate)*cols*myText6}} $" name="total" style="display: none">
+                </div>
+            </div>
+            <br>
+            <input value="{{CheckIndate}}" type="text" name="checkInDay" style="display: none">
+            <input value="{{checkInmonth}}" type="text" name="checkInMonth" style="display: none">
+            <input value="{{CheckOutdate}}" type="text" name="checkOutDay" style="display: none">
+            <input value="{{CheckOutmonth}}" type="text" name="checkOutmonth" style="display: none">
+            <input type="submit" value="Submit" id="submitBtm"></input>
+        </form>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('appCNTRL', function ($scope) {
+
+            $scope.Firstnames = {};
+            $scope.Lastnames = {};
+            $scope.DateOfBirth = {};
+            $scope.ccNumber = {};
+
+
+            $scope.checkYear = 2022;
+
+            $scope.numbers = [1, 2, 3, 4, 5];
+
+            $scope.cols = 0;
+            $scope.arr = [];
+            $scope.arr.length = 0;
+
+            $scope.five = Math.floor(Math.random() * 90000) + 10000;
+
+            $scope.check = function () {
+                if ($scope.five != $scope.num) {
+                    alert("no match");
+                }
+                if ($scope.five == $scope.num) {
+                    console.log("match");
+                }
+            }
+
+            $scope.makeArray = function () {
+                for (var i = 0; i < parseInt($scope.cols); i++) {
+                    $scope.arr.push(i);
+                }
+            }
+            //TODO: if clicked disable all previous forms
+            $scope.showForm = function () {
+                document.getElementById('form1').style.display = "block";                
+            }
+
+            $('.ccCardnum').keyup(function () {
+                var dash = $(this).val().split("-").join("");
+                if (dash.length > 0) {
+                    dash = dash.match(new RegExp('.{1,4}', 'g')).join("-");
+                }
+                $(this).val(dash);
+            });
+        });
+        //TODO: Save to DB
+    </script>
+</body>
+
+</html>

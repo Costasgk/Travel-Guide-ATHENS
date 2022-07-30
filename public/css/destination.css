@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f5796;
+}
+
+.navbar-default{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.navbar-header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-header p{
+    color: white;
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-family: Geograph;
+}
+
+.nav-list{
+    gap: 70px;
+}
+
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-family: Geograph;
+}
+
+.hmessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/destination_headImg.jpg");
+    background-position-y:-10px;
+}
+
+.head-message{
+    display: block;
+    text-transform: uppercase;
+    border: 5px solid white;
+    padding:30px;
+    color:white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-family: Geograph;
+    text-align: center;
+}
+
+.span-message{
+    font-family: Geograph;
+    font-size: 80px;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.information{
+    color: white;
+    height: 800px;
+}
+
+.information-text{
+    font-size: 17px;
+    font-family: Geograph;
+    width: 700px;
+    margin-left: 80px;
+}
+
+.athensjpg{
+    width: 40%;
+    height: 50%;
+    position: relative;
+    margin-left: 950px;
+    bottom: 450px;
+    border-radius: 200px;
+    border: 30px solid rgba(187, 219, 255, 0.315);
+}
+
+.athens-map{
+    display: flex;
+    justify-content: left;
+}
+
+.points{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Geograph;
+}
+
+.map{
+    margin: 20px;
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+#login-div{
+    margin-left: 85%;
+    background-color: transparent;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+#login-btn{
+    margin-left: 35%;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(55, 153, 245);
+}
+
+#login-email, #login-password{
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#login-email:focus::placeholder, #login-password:focus::placeholder{
+    color: transparent;
+}
+
+#login-email::placeholder, #login-password::placeholder{
+    color: white;
+    font-size: 22px;
+    opacity: 1;
+}
+
+#displayed-data{
+    color: white;
+    border-collapse:separate;
+    border-spacing: 10px;
+    width: 500px;
+    border: 2px solid white;
+    font-family: Geograph;
+    margin-bottom: 200px;
+    width: 900px;
+    margin-left: 23vw;
+}
+
+#displayed-data th{
+    letter-spacing: 1px;
+    
+}
+
+#displayed-data img{
+    width: 500px;
+}
+
+.help{
+    text-align: center;
+    color: white;
+    font-family: Geograph;
+}
+
+.help h1{
+    text-transform: capitalize;
+    font-size: 52px;
+}
+
+.help h3{
+    padding-top: 50px;
+    font-size: 33px;
+    color: rgb(255, 147, 75);
+    padding-bottom: 100px;
+}
+
+.helpfulURLs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding-bottom: 200px;
+    color: white;
+}
+.form{
+    margin-left: 35vw;
+    padding-bottom: 100px;
+    margin-bottom: 200px;
+}
+.input[type=text]{
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+.input[type=text], .input[type=url]{
+    width: 500px;
+}
+
+#submitBtm{
+    margin-top: 20px;
+    color: white;
+    border:2px solid white;
+    padding: 10px;
+    font-size: 32px;
+    margin-left: 8vw;
+
+}
+#displayed-data2{
+    color: white;
+    border-collapse:separate;
+    border-spacing: 10px;
+    width: 500px;
+    border: 2px solid white;
+    font-family: Geograph;
+    margin-bottom: 100px;
+    width: 900px;
+    margin-left: 25vw;
+}
+@font-face {
+    font-family: Geograph;
+    src: url('test-geograph-regular.woff2') format('woff2');
+}
