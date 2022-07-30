@@ -10,7 +10,7 @@ The web application was created using the **MEAN** stack.
 
 The way to use it, is very simple:
 
-1. Execute node app.js
+1. Execute `node app.js`
 2. On a browser, insert the address `http://localhost:8888`
 
 
